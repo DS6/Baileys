@@ -554,7 +554,8 @@ export const generateWAMessageContent = async(
 				key: message.edit,
 				editedMessage: m,
 				timestampMs: Date.now(),
-				type: WAProto.Message.ProtocolMessage.Type.MESSAGE_EDIT
+				type: WAProto.Message.ProtocolMessage.Type.MESSAGE_EDIT,
+				mentions: message.edit?.mentions
 			}
 		}
 	}
